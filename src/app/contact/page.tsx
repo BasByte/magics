@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import { Mail, MapPin, Phone, Github, Twitter, Linkedin, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { FaGithub, FaXTwitter, FaLinkedinIn  } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -70,13 +71,13 @@ export default function Contact() {
 
             <div className="relative z-10 mt-12 flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-                <Github className="w-5 h-5 text-white" />
+                <FaGithub className="w-5 h-5 text-white" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-                <Twitter className="w-5 h-5 text-white" />
+                <FaXTwitter className="w-5 h-5 text-white" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-                <Linkedin className="w-5 h-5 text-white" />
+                <FaLinkedinIn className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
